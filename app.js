@@ -26,7 +26,7 @@ function fetchProducts() {
         cellName.textContent = product.nombre;  // Establece el contenido de la celda
 
         const cellPrice = row.insertCell(1);
-        cellPrice.textContent = "$" + product.precio;
+        cellPrice.textContent = product.precio;
 
         const cellDescription = row.insertCell(2);
         cellDescription.textContent = product.descripcion;
