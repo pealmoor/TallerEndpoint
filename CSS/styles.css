@@ -1,0 +1,109 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111; /* Color de fondo negro */
+    color: #f5f5f5; /* Color de texto claro */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para la tabla */
+table {
+    border-collapse: collapse; /* Combina los bordes */
+    width: 100%;
+    border: 3px solid #d32f2f; /* Bordes más gruesos y rojos alrededor de la tabla */
+    border-radius: 10px; /* Bordes redondeados para la tabla */
+    box-shadow: 0px 0px 10px 3px rgba(211, 47, 47, 0.5); /* Sombra alrededor de la tabla */
+    overflow: hidden; /* Asegura que los bordes redondeados se apliquen correctamente */
+    background-color: #333; /* Color de fondo gris oscuro */
+}
+
+th, td {
+    padding: 10px 20px;
+    border-bottom: 2px solid #d32f2f; /* Bordes más gruesos y rojos entre las filas */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+th {
+    background-color: #d32f2f; /* Color de fondo rojo para encabezados */
+    color: #f5f5f5; /* Color de texto claro para encabezados */
+}
+
+tr:last-child td {
+    border-bottom: none; /* Remueve el borde de la última fila */
+}
+
+tr:hover td {
+    background-color: #555; /* Color de fondo gris más claro al pasar el cursor sobre una fila */
+}
+
+/* Estilo para botones */
+button {
+    background-color: #d32f2f; /* Color de fondo rojo */
+    color: #f5f5f5; /* Color de texto claro */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    font-size: 1em;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #f44336; /* Color de fondo rojo un poco más claro al pasar el cursor */
+    transform: scale(1.05); /* Hace el botón un poco más grande al pasar el cursor */
+}
+
+button:active {
+    background-color: #b71c1c; /* Color de fondo rojo oscuro al hacer clic */
+    transform: scale(0.95); /* Hace el botón un poco más pequeño al hacer clic */
+}
+
+/* Centrado de contenido */
+.centered-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+/* Estilo para el formulario */
+form {
+    display: flex;
+    flex-direction: column; /* Disposición vertical de los campos */
+    width: 80%; /* Cambia según la preferencia */
+    max-width: 500px; /* Cambia según la preferencia */
+    border: 3px solid #d32f2f; /* Bordes más gruesos y rojos alrededor del formulario */
+    border-radius: 10px; /* Bordes redondeados para el formulario */
+    box-shadow: 0px 0px 10px 3px rgba(211, 47, 47, 0.5); /* Sombra alrededor del formulario */
+    overflow: hidden; /* Asegura que los bordes redondeados se apliquen correctamente */
+    background-color: #333; /* Color de fondo gris oscuro */
+    padding: 20px; /* Espaciado interno para el formulario */
+    margin: 20px 0; /* Margen alrededor del formulario */
+}
+
+label {
+    color: #f5f5f5; /* Color de texto claro para las etiquetas */
+    margin-bottom: 10px;
+}
+
+input, textarea, select {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 10px; 
+    border: 2px solid #d32f2f; /* Bordes rojos */
+    border-radius: 5px; 
+    background-color: #555; /* Color de fondo más claro para los campos */
+    color: #f5f5f5; /* Color de texto claro */
+    margin-bottom: 20px; /* Espaciado entre los campos */
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 5px #d32f2f; /* Sombra roja alrededor del campo activo */
+}
