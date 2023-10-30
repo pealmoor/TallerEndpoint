@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Productos</title>
+    <!-- Aquí puedes agregar tus estilos CSS si los tienes -->
+</head>
+<style>
+    /* Estilo para tener la tabla y los botones uno al lado del otro */
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    /* Un poco de margen entre los botones */
+    button {
+        display: block;
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+<table id="productsTable">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Descripción</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Las filas de productos se insertarán aquí -->
+    </tbody>
+</table>
+
+<!-- Área para los botones -->
+<aside>
+    <button onclick="window.location.href='actualizar.html'">Actualizar Datos</button>
+    <button onclick="window.location.href='eliminar.html'">Eliminar</button>
+</aside>
+</div>
+
+<!-- Aquí puedes agregar tus scripts JS -->
+<script src="app.js"></script>
+</body>
+</html>
